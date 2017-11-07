@@ -1,6 +1,7 @@
 var stack = require('./stack/stack');
 var Set = require('./set/set');
-var Queue = require('./queue/queue')
+var Queue = require('./queue/queue');
+var PriorityQueue = require('./queue/priority-queue');
 
 
 // Stack Operations
@@ -37,3 +38,14 @@ queue.enqueue('a');
 queue.enqueue('b');
 queue.enqueue('c');
 queue.print();
+
+// Priority Queue
+
+var priorityQueue = new PriorityQueue();
+
+priorityQueue.enqueue(['H', 2]);
+// priorityQueue.enqueue(['A', 1]);
+// priorityQueue.enqueue(['B', 3]);
+// priorityQueue.enqueue(['D', 2]);
+
+priorityQueue.print();
