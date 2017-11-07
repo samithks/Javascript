@@ -1,5 +1,6 @@
 var stack = require('./stack/stack');
 var Set = require('./set/set');
+var Queue = require('./queue/queue')
 
 
 // Stack Operations
@@ -27,3 +28,12 @@ setB.add('j');
 console.log(setA.subset(setB));
 setA.remove('a');
 console.log(setA.has('c'));
+
+// Queue
+
+var queue = new Queue();
+
+queue.enqueue('a');
+queue.enqueue('b');
+queue.enqueue('c');
+queue.print();
